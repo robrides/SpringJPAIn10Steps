@@ -1,0 +1,16 @@
+package com.in28minutes.learning.jpa.jpain10steps.services;
+
+import javax.persistence.EntityManager;
+
+import com.in28minutes.learning.jpa.jpain10steps.entities.User;
+
+public class UserDAOService {
+
+	private EntityManager entityManager;
+	
+	public long insert(User user) {
+		entityManager.persist(user);
+		return user.getId();
+	}
+	
+}
