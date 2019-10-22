@@ -1,0 +1,12 @@
+package com.in28minutes.learning.jpa.jpain10steps;
+
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserRepositoryCommandLineRunner implements CommandLineRunner {
+
+	private static final Logger log = 
+			LoggerFactory.getLogger(UserRepositoryCommandLineRunner.class);
+}
